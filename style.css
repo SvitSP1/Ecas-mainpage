@@ -1,0 +1,649 @@
+/* Reset some default styles */
+html::-webkit-scrollbar {
+    display: none;
+  }
+
+html {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body, h1, h2, h3, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the header */
+.site-header {
+    position: sticky; /* Change to "fixed" to make the header fixed */
+    top: 0; /* Position the header at the top of the viewport */
+    background-color: #00C2FF;
+    color: white;
+    padding: 5px 5px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Make the header span the full width of the viewport */
+    z-index: 100; 
+    /* Add a higher z-index to ensure the header appears above other content */
+}
+
+/* Center-align the navigation links */
+.site-header nav ul {
+    list-style: none;
+    display: flex; /* Use flexbox for navigation links */
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Horizontally center items */
+}
+
+.site-header nav ul li {
+    margin: 26px 26px; /* Adjust margin to 26px (52px space between links) */
+    font-family: Inter;
+    font-size: 32px; /* Decrease font size for smaller screens */
+}
+
+.site-header nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.site-header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 32px; /* Decrease font size for smaller screens */
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.site-header nav ul li a:hover {
+    color: #ff9900;
+}
+
+.img1 {
+    height: 30px;
+    vertical-align: middle; /* Vertically align the image within its container */
+}
+
+.sec1 {
+    background-color: #0075FF;
+}
+
+.sec1 h1 {
+    text-align: center;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sec1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1112px;
+    height: auto;
+}
+
+
+@keyframes mainButtonHoverH1In {
+    from {
+        padding-top: 25px;
+        transform: translateY(0);
+        background: linear-gradient(298deg, #24FF00 0%, #00A3FF 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    to {
+        padding-top: 0;
+        transform: translateY(-90px);
+        background: linear-gradient(298deg, #24FF00 0%, #00A3FF 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@keyframes mainButtonHoverH1Out {
+    from {
+        padding-top: 0px;
+        transform: translateY(-90px);
+        background: linear-gradient(298deg, #24FF00 0%, #00A3FF 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    to {
+        padding-top: 25px;
+        transform: translateY(0);
+        background: linear-gradient(298deg, #24FF00 0%, #00A3FF 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@keyframes mainButtonHoverIn {
+    from {
+        background: #0038FF;
+    }
+    to {
+        background: linear-gradient(270deg, #DB00FF 0%, #0038FF 100%);
+    }
+}
+
+@keyframes mainButtonHoverOut {
+    from {
+        background: linear-gradient(270deg, #DB00FF 0%, #0038FF 100%);
+    }
+    to {
+        background: #0038FF;
+    }
+}
+
+.sec2 {
+    background: #80CA6D;
+    
+}
+
+.sec2 h1 {
+    padding-top: 60px;
+    text-align: center;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sec2 h2 {
+    margin: auto;
+    text-align: center;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 100%; /* Allow text to wrap properly on smaller screens */
+}
+
+.sec2 h3 {
+    margin: auto;
+    text-align: center;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 1144px; /* Allow text to wrap properly on smaller screens */
+}
+
+.sec2 .imgs img {
+    max-width: 50%; /* Make images responsive */
+    height: auto;
+    margin: auto; /* Center-align the image horizontally and vertically */
+}
+
+.sec2 .imgs {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    gap: 20px; /* Add some space between the two divs */
+}
+
+.sec2 .imgs div {
+    width: 100%; /* Adjust width for smaller screens */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+}
+
+.sec2 .imgs h2 {
+    width: 100%; /* Adjust width for smaller screens */
+}
+
+
+.sec2 .nfc img {
+    
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    margin: auto; /* Center-align the image horizontally and vertically */
+    margin-top: -126px;
+}
+
+.sec2 .nfc {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    gap: 20px; /* Add some space between the two divs */
+}
+
+.sec2 .nfc div {
+    width: 100%; /* Adjust width for smaller screens */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+}
+
+.sec2 .nfc h2 {
+    margin-top: -30px;
+    width: 100%; /* Adjust width for smaller screens */
+}
+
+.sec2 .nfc h3 {
+    margin-top: -20px;
+    width: 50%; /* Adjust width for smaller screens */
+}
+
+
+
+
+
+.sec3{
+    background: #0075FF;
+    
+}
+
+
+.sec3 h1 {
+    padding-top: 60px;
+    text-align: center;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sec3 h2 {
+    margin: auto;
+    text-align: center;
+    color: #0029FF;
+    font-family: Inter, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 100%; /* Allow text to wrap properly on smaller screens */
+}
+
+.sec3 h3 {
+    margin: auto;
+    text-align: center;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 547px; /* Allow text to wrap properly on smaller screens */
+}
+
+
+
+.sec4{
+    background: #A67363;
+    
+}
+
+
+.sec4 h1 {
+    padding-top: 60px;
+    text-align: center;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sec4 h2 {
+    margin: auto;
+    text-align: center;
+    color: #0029FF;
+    font-family: Inter, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 100%; /* Allow text to wrap properly on smaller screens */
+}
+
+.sec4 h3 {
+    margin: auto;
+    text-align: center;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 642px; /* Allow text to wrap properly on smaller screens */
+}
+
+.sec5{
+    background: #00C2FF;
+    
+}
+
+
+.sec5 h1 {
+    padding-top: 60px;
+    text-align: center;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sec5 h2 {
+    margin: auto;
+    text-align: center;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 100%; /* Allow text to wrap properly on smaller screens */
+}
+
+.sec5 h3 {
+    margin: auto;
+    text-align: center;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 642px; /* Allow text to wrap properly on smaller screens */
+}
+
+.footer {
+    background-color: #232323;
+    
+
+}
+ .footer div{
+    display: flex;
+ }
+.footer div div{
+    display: inline-block;
+    flex: 1;
+}
+
+.footer h1{
+    color: white;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+.footer a{
+    text-decoration-line: underline;
+    
+    color: white;
+}
+
+.footer h2{
+    color: white;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainButton {
+    position: relative; /* Add this line */
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 49px;
+    background: #0038FF;
+    width: 455px;
+    height: 100px;
+    flex-shrink: 0;
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+    animation: mainButtonHoverOut 1s forwards;
+    z-index: 1; /* Add a z-index to ensure it's above the content */
+}
+
+.mainButton:hover {
+    animation: mainButtonHoverIn 1s forwards;
+}
+
+.mainButton h1 {
+    padding-top: 25px;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(298deg, #24FF00 0%, #00A3FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: mainButtonHoverH1Out 300ms forwards;
+}
+
+.mainButton:hover h1 {
+    animation: mainButtonHoverH1In 300ms forwards;
+}
+
+
+
+/* Media query for screens smaller than 785px */
+@media (max-width: 785px) {
+    .site-header {
+        height: 40px;
+    }
+
+    .site-header nav ul li {
+        margin: 7px;
+        font-size: 16px;
+    }
+
+    .site-header nav ul li a {
+        font-size: 13px;
+    }
+
+    .img1 {
+        height: 20px;
+    }
+
+    .sec1 h1 {
+        font-size: 32px;
+    }
+
+   
+
+    .sec2 h1 {
+        padding-top: 25px;
+        font-size: 48px;
+    }
+
+    .sec2 h3 {
+        font-size: 24px;
+    }
+
+    .sec2 .imgs {
+        display: flex;
+        flex-direction: column; /* Change flex direction to column */
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sec2 .imgs div {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .sec2 .imgs img {
+        max-width: 100%; /* Make images responsive, but fit within their container */
+        height: auto;
+    }
+
+    .sec2 .nfc div {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .sec2 .nfc img {
+        max-width: 100%; /* Make images responsive, but fit within their container */
+        height: auto;
+        margin-top: -74px;
+    }
+
+    .sec2 .nfc {
+        display: flex;
+        flex-direction: column; /* Change flex direction to column */
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sec2 .nfc h3{
+        margin-top: -100px;
+        width: 100%; /* Adjust width for smaller screens */
+
+    }
+
+    .sec2 h3 {
+        font-size: 20px;
+
+    }
+
+    .sec2 h1 {
+        font-size: 32px;
+
+    }
+    .sec2 h2 {
+        font-size: 28px;
+
+    }
+
+    .sec3 h3 {
+        font-size: 20px;
+
+    }
+
+    .sec3 h1 {
+        font-size: 32px;
+
+    }
+    .sec3 h2 {
+        font-size: 28px;
+
+    }
+
+    .sec4 h3 {
+        font-size: 20px;
+
+    }
+
+    .sec4 h1 {
+        font-size: 32px;
+
+    }
+    .sec4 h2 {
+        font-size: 28px;
+
+    }
+
+
+    .sec5 h3 {
+        font-size: 20px;
+
+    }
+
+    .sec5 h1 {
+        font-size: 48px;
+
+    }
+    .sec5 h2 {
+        font-size: 28px;
+
+    }
+    .footer div{
+        display: block;
+     }
+     .footer div div{
+        width: 100%;
+        flex: none;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     .mainButton h1 {
+        padding-top: 20px;
+        font-size: 24px;
+        animation: none;
+    }
+
+    .mainButton {
+        margin-top: 25px;
+        border-radius: 30px;
+        width: 300px;
+        height: 65px;
+        animation: none;
+    }
+
+    .mainButton:hover {
+        animation: none;
+    }
+
+    .mainButton:hover h1 {
+        animation: none;
+    }
+}
+
+
