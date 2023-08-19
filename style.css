@@ -148,6 +148,20 @@ body, h1, h2, h3, ul, li, p {
     }
 }
 
+.product{
+    
+    margin: auto;
+    margin-top: 30px;
+    width: 600px;
+    border-radius: 61px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 13px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
 .sec2 {
     background: #80CA6D;
     
@@ -158,11 +172,16 @@ body, h1, h2, h3, ul, li, p {
     text-align: center;
     color: #000;
     font-family: Inter, sans-serif;
-    font-size: 96px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
+
+.sec2 .nakup h1 {
+    padding-top: 0px;
+}
+
 
 .sec2 h2 {
     margin: auto;
@@ -187,6 +206,19 @@ body, h1, h2, h3, ul, li, p {
     line-height: normal;
     max-width: 1144px; /* Allow text to wrap properly on smaller screens */
 }
+
+.sec2 h4 {
+    margin: auto;
+    text-align: center;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 800px; /* Allow text to wrap properly on smaller screens */
+}
+
 
 .sec2 .imgs img {
     max-width: 50%; /* Make images responsive */
@@ -443,10 +475,16 @@ body, h1, h2, h3, ul, li, p {
     animation: mainButtonHoverOut 1s forwards;
     z-index: 1; /* Add a z-index to ensure it's above the content */
 }
+.product .mainButton {
+    margin-top: 10px;
+
+}
 
 .mainButton:hover {
     animation: mainButtonHoverIn 1s forwards;
 }
+
+
 
 .mainButton h1 {
     padding-top: 25px;
@@ -467,10 +505,39 @@ body, h1, h2, h3, ul, li, p {
     animation: mainButtonHoverH1In 300ms forwards;
 }
 
+.nadeljuj{
+    margin: auto;
+    margin-top: 20px;
+    width: 400px;
+    height: 80px;
+    background-image: linear-gradient(270deg, #DB00FF 0%, #0038FF 100%);
+    border-radius: 100px;
+}
+.nadeljuj:hover{
+    cursor: pointer;
+    user-select: none;
+}
+.nadeljuj h1{
+    color: white;
+}
+
 
 
 /* Media query for screens smaller than 785px */
 @media (max-width: 785px) {
+    .nadeljuj{
+        margin: auto;
+        margin-top: 10px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .product{
+        width: 300px;
+
+    }
+    
+    
     .site-header {
         height: 40px;
     }
@@ -501,6 +568,9 @@ body, h1, h2, h3, ul, li, p {
 
     .sec2 h3 {
         font-size: 24px;
+    }
+    .sec2 h4 {
+        font-size: 16px;
     }
 
     .sec2 .imgs {
